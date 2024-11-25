@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head><style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  align-items:top;
+  justify-content:top;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  background-color: #444;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* CSS to show dropdown when checkbox is checked */
+.menu-toggle:checked + .menu-button + .dropdown-content {
+  display: block;
+}
+
+.content {
+  margin-left: 60px;
+  padding: 20px;
+}
+</style>
+<body>
+  <!-- Sidebar with Three Dot Menu -->
+  <div class="sidebar">
+    <div class="menu">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button">&#8230;</label>
+      <div class="dropdown-content">
+        <a href="#"> GUILD TEST</a>
+        <a href="#"> </a>
+        <a href="#">CONTACT US</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>HOME</p>
+  </div>
+</body>
+</html>
+
+
+ <title>Centered Circular Logo</title>
+    <link rel="stylesheet" href="styles.css">
+</head><style>/* Reset default margin, set full height */
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Center the header content */
+.header {
+    width: 100%;
+    text-align: center; /* Horizontally center the logo */
+    padding-top: 20px; /* Optional padding to move logo down from the top */
+}
+
+/* Create a circular container for the logo */
+.logo-container {
+    width: 150px;  /* Set the width and height of the circle */
+    height: 150px;
+    border-radius: 50%;  /* Makes the container circular */
+    overflow: hidden;  /* Ensures logo fits perfectly within the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;  /* Center the container horizontally */
+}
+
+/* Style the logo inside the container */
+.logo {
+    width: 100%;  /* Make the logo fill the container */
+    height: 100%;  /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the logo doesn't stretch */
+}
+</style>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo" class="logo">
+        </div>
+    </div>
+</body>
+</html>
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles for the header */
+    .animated-heading {
+      font-family: 'Poppins', sans-serif; /* Stylish font */
+      font-size: 3rem; /* Large font size */
+      color: #007BFF; /* Initial blue color */
+      text-align: center; /* Center the text */
+      text-transform: uppercase; /* Uppercase text */
+      letter-spacing: 2px; /* Letter spacing */
+      opacity: 0; /* Start invisible */
+      transform: translateY(30px); /* Start slightly lower */
+      animation: fadeInUp 2s ease-out forwards; /* Apply animation */
+    }
+
+    /* Keyframes for the fade-in and slide-up effect */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Animated Header -->
+<h1 class="animated-heading">RAISTAR JUNIOR WELCOMES YOU</h1>
+
+</body> 
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming YouTuber Social Media Hub</title>
+    <style>
+        /* General Styles */
+  
+        header {
+            text-align: center;
+           <img src="logo.jpg" alt="Circle Logo" class="circle-logo">
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Featured Images Section */
+        .featured-images {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .featured-images h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Featured Videos Section */
+        .featured-videos {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .featured-videos h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 480px;
+            height: 270px;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- About Section -->
+        <section class="about">
+            <h2>About My Gaming Channel</h2>
+            <p>
+                Welcome to my gaming channel! I'm passionate about games, sharing tips and tricks, and entertaining my audience with thrilling gameplay. 
+                Join me on this adventure as I tackle challenges, unlock achievements, and engage with the gaming community!
+            </p>
+        </section>
+  <title>Social Media Icons with Hover Links</title>
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Style for the social icons container */
+    .social-icons {
+      display: flex; /* Align icons in a row */
+      justify-content: center; /* Center the icons */
+      gap: 40px; /* Space between icons */
+      margin-top: 20px;
+    }
+
+    /* Style for individual social icon links */
+    .social-icons a {
+      font-size: 40px; /* Icon size */
+      color: #888; /* Default icon color */
+      text-decoration: none; /* Remove underline */
+      transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+    }
+
+    /* Hover effects for each platform */
+    .social-icons a:hover {
+      transform: scale(1.2); /* Slight zoom effect */
+    }
+    .social-icons .youtube:hover {
+      color: #FF0000; /* YouTube red */
+    }
+    .social-icons .instagram:hover {
+      color: #C13584; /* Instagram pink */
+    }
+    .social-icons .discord:hover {
+      color: #5865F2; /* Discord purple */
+    }
+    }
+    .social-icons .instagram2:hover {
+      color: #C13584; /* Instagram pink */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Social Media Icons -->
+<h1> CLICK ON THE ICON TO ACCES MY SOCIAL MEDIA HANDELS</H1>
+<div class="social-icons">
+  <!-- YouTube -->
+  <a href="http://www.youtube.com/@raistarjunioryt453" class="youtube" target="_blank" title="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/axom_jod?igsh=Z2EzMWVpamJpd202" class="instagram" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- Discord -->
+  <a href="https://discord.gg/rg7ceeuV/" class="discord" target="_blank" title="Discord">
+    <i class="fab fa-discord"></i>
+  </a>
+
+  <!-- Instagram2 -->
+  <a href="https://www.instagram.com/_raistar_jr___?igsh=MXJmN3Q0eXUyNHkyOA==" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+     
+        <!-- Featured Images Section -->
+        <section class="featured-images">
+            <h2>Featured Images</h2>
+ <style>
+    /* Container for the row of images */
+    .image-row {
+      display: flex; /* Arrange images in a row */
+      gap: 10px; /* Space between images */
+      justify-content: center;
+      margin: 40px;
+    }
+
+    /* Individual image container */
+    .image-container {
+      position: relative;
+      width: 450px; /* Set desired image width */
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Style the images */
+    .image-container img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Hover effect for zoom and dim */
+    .image-container:hover img {
+      transform: scale(1.1); /* Slight zoom */
+      opacity: 0.9; /* Slight dimming effect */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Row of images -->
+<div class="image-row">
+  <div class="image-container">
+    <img src="image1.jpg" alt="Image 1">
+  </div>
+  <div class="image-container">
+    <img src="guild.jpg" alt="Image 2">
+  </div>
+  <div class="image-container">
+    <img src="hud.jpg" alt="Image 3">
+  </div>
+  <div class="image-container">
+    <img src="s.jpg" alt="Image 4">
+  </div>
+</div>
+
+<script>
+  // Add fullscreen functionality to all images
+  const imageContainers = document.querySelectorAll('.image-container');
+
+  imageContainers.forEach(container => {
+    const image = container.querySelector('img');
+
+    container.addEventListener('click', () => {
+      if (document.fullscreenElement) {
+        // Exit fullscreen if already in fullscreen
+        document.exitFullscreen();
+      } else {
+        // Enter fullscreen mode for the clicked image
+        if (container.requestFullscreen) {
+          container.requestFullscreen();
+        } else if (container.webkitRequestFullscreen) { // For Safari
+          container.webkitRequestFullscreen();
+        } else if (container.msRequestFullscreen) { // For IE
+          container.msRequestFullscreen();
+        }
+      }
+    });
+  });
+</script>
+       <!-- Featured Videos Section -->
+        <section class="featured-videos">
+            <h2>Featured Videos</h2>
+    
+   <style>
+    /* Container for the row of videos */
+    .video-row {
+      display: flex; /* Arrange videos in a row */
+      gap: 10px; /* Space between videos */
+      justify-content: center; /* Center the row */
+      margin: 20px;
+    }
+
+    /* Individual video container */
+    .video-container {
+      position: relative;
+      width: 300px; /* Set the width of the video */
+      cursor: pointer;
+      overflow: hidden;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+
+    /* Style the video */
+    .video-container video {
+      width: 100%;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      border-radius: 8px;
+    }
+
+    /* Hover effect for zoom */
+    .video-container:hover video {
+      transform: scale(1.05); /* Slight zoom effect */
+      opacity: 1; /* Ensure full visibility */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Row of videos -->
+<div class="video-row">
+  <div class="video-container">
+    <video muted loop preload="metadata">
+      <source src="RAISTAR.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video muted loop preload="metadata">
+      <source src="SETTING.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video muted loop preload="metadata">
+      <source src="HANDCAM.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script>
+  // Add hover functionality for videos
+  const videoContainers = document.querySelectorAll('.video-container');
+
+  videoContainers.forEach(container => {
+    const video = container.querySelector('video');
+
+    // Play video on hover
+    container.addEventListener('mouseenter', () => {
+      video.play();
+    });
+
+    // Pause video when hover ends
+    container.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0; // Reset to the start
+    });
+
+    // Toggle controls on click
+    container.addEventListener('click', () => {
+      video.controls = !video.controls; // Show/hide controls
+    });
+  });
+</script>
+<footer>
+        <p>&copy; 2024 RAISTAR JUNIOUR YT Channel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
